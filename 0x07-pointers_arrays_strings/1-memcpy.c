@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _memset - fill a block of memory with a specific value
+ * _memcpy - copies a block of memory to another block of memory
  * @dest: destination of copying
  * @src: the source to copy from
  * @n: number of bytes to be copied
