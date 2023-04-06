@@ -25,6 +25,6 @@ int actual_sqrt_recursion_helper(int n, int iterator)
 	if (iterator * iterator > n)
 		return (-1);
 	if (iterator * iterator == n)
-		return (i);
-	return (actual_sqrt_recursion_helper(n, i + 1));
+		return (iterator);
+	return (actual_sqrt_recursion_helper(n, iterator + 1));
 }
