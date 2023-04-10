@@ -54,13 +54,19 @@ int _atoi(char *s)
   */
 int main(int argc, char *argv[])
 {
-	if (argc <= 1 || argc >= 4)
+	int firstNum, secNum, res;
+
+	if (argc < 1 || argc > 3)
 	{
 		printf("Error\n");
 
 		return (1);
 	}
-	printf("%d\n", _atoi(argv[1]) * _atoi(argv[2]);
+
+	firstNum = _atoi(argv[1]);
+	secNum = _atoi(argv[2]);
+	res = firstNum * secNum;
+	printf("%d\n", res);
 
 	return (0);
 }
