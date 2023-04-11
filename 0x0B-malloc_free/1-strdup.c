@@ -14,7 +14,7 @@ char *_strdup(char *str)
 	char *final;
 
 	if (str == NULL)
-		return NULL;
+		return (NULL);
 
 	i = 0;
 	while (str[i] != '\0')
@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	final = malloc(sizeof(char) * (i + 1));
 
 	if (final == NULL)
-		return NULL;
+		return (NULL);
 
 	for (j = 0; str[j]; j++)
 		final[j] = str[j];
