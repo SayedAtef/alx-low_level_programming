@@ -6,7 +6,7 @@
   * @size: the size of the array to be created
   * @c: char to be assigned
   *
-  * Retrun: pointer to array address or NULL
+  * Return: pointer to array address or NULL
   */
 char *create_array(unsigned int size, char c)
 {
@@ -15,9 +15,9 @@ char *create_array(unsigned int size, char c)
 
 	final = malloc(sizeof(char) * size);
 	if (size == 0 || final == NULL)
-		return NULL;
+		return (NULL);
 
 	for (i = 0; i < size; i++)
 		final[i] = c;
-	return final;
+	return (final);
 }
