@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "dog.h"
 
-/** init_dog - initialize variabe of type struct dog
+/**
+  * init_dog - initialize variabe of type struct dog
   * @d: a pointer to which will be used to initialize struct dog
   * @name: the dog's name
   * @age: the dog's age
