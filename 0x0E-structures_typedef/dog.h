@@ -15,8 +15,11 @@ struct dog
 	char *name;
 	float age;
 	char *owner;
-}
+};
 
-typedef struct dog dog_t;
+/**
+  * dog_type - new type using dog
+  */
+typedef struct dog dog_type;
 
 #endif
