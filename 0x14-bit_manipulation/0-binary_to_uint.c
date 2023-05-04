@@ -10,12 +10,12 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	if (!b)
-		return (0);
-
 	size_t length = strlen(b);
 	unsigned int base_num = 1, decimal = 0;
 	int i;
+
+	if (!b)
+		return (0);
 
 	for (i = length; i >= 0; i--)
 	{
@@ -23,9 +23,9 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 
 		if (b[i] != '0')
-			decimal += base;
+			decimal += base_num;
 
-		base *= 2;
+		base_num *= 2;
 	}
 
 	return (decimal);
