@@ -1,5 +1,3 @@
-#include <stddef.h>
-#include <string.h>
 #include "main.h"
 
 /**
@@ -10,16 +8,15 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	size_t length = strlen(b);
 	unsigned int base_num = 1, decimal = 0;
 	int i;
 
 	if (!b)
 		return (0);
 
-	for (i = length; i >= 0; i--)
+	for (i = 0; b[i] != '\0'; i++)
 	{
-		if (b[i] != '0' && b[1] != '1')
+		if (b[i] != '0' || b[1] != '1')
 			return (0);
 
 		if (b[i] != '0')
