@@ -5,7 +5,7 @@
   * @n: given number
   * @index: index of bit to be changed
   *
-  * Return: 0 or -1
+  * Return: 1 for success or -1 for faliure
   */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
