@@ -1,9 +1,9 @@
 #include "main.h"
 
- /**
-  * clear_bit - clears the value of a bit at given index to 1
+/**
+  * clear_bit - clears the value of a bit 
   * @n: given number
-  * @index: index of bit to be changed
+  * @index: index of bit to be cleared
   *
   * Return: 1 for success or -1 for faliure
   */
